@@ -1,0 +1,49 @@
+﻿@model List<MyELearningProject.DAL.Entities.About>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="row">
+    <div class="col-12">
+      <div class="card">
+          <div class="card-block">
+              <h3>Hakkımızda</h3>
+              <br />
+              <table class="table align-middle">
+                  <tr>
+                      <th>Başlık</th>
+                      <th>Açıklama</th>
+                      <th>Yetenekler</th>
+                      <th>  </th>
+                      <th>  </th>
+                      <th>  </th>
+                      <th>  </th>
+                      <th>  </th>
+                      <th>  </th>
+                      <th>Sil</th>
+                      <th>Güncelle</th>
+                  </tr>
+                  @foreach(var item in Model)
+            {
+                      <tr>
+                          <td>@item.Title</td>
+                          <td>@item.Description</td>
+                          <td>@item.Skill1</td>
+                          <td>@item.Skill2</td>
+                          <td>@item.Skill3</td>
+                          <td>@item.Skill4</td>
+                          <td>@item.Skill5</td>
+                          <td>@item.Skill6</td>
+                          <td>  </td>
+                          <td><a href="/About/DeleteAbout/@item.AboutID" class="btn btn-outline-danger">Sil</a></td>
+                          <td><a href="/About/UpdateAbout/@item.AboutID" class="btn btn-outline-success">Güncelle</a></td>
+                      </tr>
+            }
+              </table>
+          </div>
+      </div>
+    </div>
+</div>
+<a href="/About/AddAbout/" class="btn btn-outline-primary">Yeni Yetenek Ekle</a> 
+

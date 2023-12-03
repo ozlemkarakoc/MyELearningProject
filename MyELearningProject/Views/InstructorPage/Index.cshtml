@@ -1,0 +1,34 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="tr">
+
+@Html.Action("InstructorHeadPartial" , "InstructorPage")
+
+<body>
+    <!-- Spinner Start -->
+    @Html.Action("InstructorSpinnerPartial" , "InstructorPage")
+    <!-- Spinner End -->
+    <!-- Navbar Start -->
+    @Html.Action("InstructorNavbarPartial" , "InstructorPage")
+    <!-- Navbar End -->
+    <!-- Header Start -->
+    @Html.Action("InstructorHeaderPartial" , "InstructorPage")
+    <!-- Header End -->
+    <!-- Team Start -->
+    @Html.Action("InstructorInstructorPartial" , "InstructorPage")
+    <!-- Team End -->
+    <!-- Footer Start -->
+    @Html.Action("InstructorFooterPartial" , "InstructorPage")
+    <!-- Footer End -->
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    @Html.Action("InstructorScriptPartial" , "InstructorPage")
+
+</body>
+
+</html>

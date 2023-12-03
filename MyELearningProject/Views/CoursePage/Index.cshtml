@@ -1,0 +1,40 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="tr">
+
+@Html.Action("CourseHeadPartial" , "CoursePage")
+
+<body>
+    <!-- Spinner Start -->
+    @Html.Action("CourseSpinnerPartial" , "CoursePage")
+    <!-- Spinner End -->
+    <!-- Navbar Start -->
+    @Html.Action("CourseNavbarPartial" , "CoursePage")
+    <!-- Navbar End -->
+    <!-- Header Start -->
+    @Html.Action("CourseHeaderPartial" , "CoursePage")
+    <!-- Header End -->
+    <!-- Categories Start -->
+    @*@Html.Action("CourseCategoryPartial" , "CoursePage")*@
+    <!-- Categories Start -->
+    <!-- Courses Start -->
+    @Html.Action("CourseCoursePartial" , "CoursePage")
+    <!-- Courses End -->
+    <!-- Testimonial Start -->
+    @*@Html.Action("CourseTestimonialPartial" , "CoursePage")*@
+    <!-- Testimonial End -->
+    <!-- Footer Start -->
+    @Html.Action("CourseFooterPartial" , "CoursePage")
+    <!-- Footer End -->
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    @Html.Action("CourseScriptPartial" , "CoursePage")
+ 
+</body>
+
+</html>

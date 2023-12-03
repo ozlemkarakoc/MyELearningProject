@@ -1,0 +1,92 @@
+﻿@model List<MyELearningProject.DAL.Entities.Course>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+@*<div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-block">
+                    Kurs Listesi
+                    <br />
+                    <table class="table table-bordered">
+                        <tr>
+                            <th>#</th>
+                            <th>Kurs Adı</th>
+                            <th>Kategori</th>
+                            <th>Eğitmen</th>
+                            <th>Sil</th>
+                            <th>Güncelle</th>
+                        </tr>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.CourseID</td>
+                                <td>@item.Title</td>
+                                <td>@item.Category.CategoryName</td>
+                                <td>@item.Instructor.Name @item.Instructor.Surname</td>
+                                <td><a href="/Course/DeleteCourse/@item.CourseID" class="btn btn-outline-danger">Sil</a></td>
+                                <td><a href="/Course/UpdateCourse/@item.CourseID" class="btn btn-outline-success">Güncelle</a></td>
+                            </tr>
+                        }
+                    </table>
+                    <a href="/Course/CreateCourse/" class="btn btn-outline-primary">Yeni Kurs Girişi</a>
+                </div>
+            </div>
+        </div>
+    </div>*@
+
+
+
+<style>
+    .card-title {
+        font-weight: bold;
+        font-size: 1.2em; 
+        text-align: center;
+    }
+
+    .card-text {
+        font-family: 'Arial', sans-serif; 
+        text-align: center;
+    }
+
+    .card-footer {
+        text-align: center;
+    }
+
+        .card-footer a.btn {
+            margin: 5px; 
+            font-size: 1em; 
+            width: 120px; 
+        }
+</style>
+
+<div class="container">
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="@item.ImageUrl" class="card-img-top" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">@item.Title</h5>
+                        <p class="card-text">Eğitmen: @item.Instructor.Name @item.Instructor.Surname</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Fiyat: @item.Price ₺</li>
+                            <li class="list-group-item">Süre: @item.Duration dakika</li>
+                            <li class="list-group-item">Kayıt: 11298</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a href="javascript:void(0)" class="btn btn-warning btn-sm">Kurs İçeriği</a>
+                        <a href="/Course/UpdateCourse/@item.CourseID" class="btn btn-success btn-sm">Güncelle</a>
+                        <a href="/Course/DeleteCourse/@item.CourseID" class="btn btn-red btn-sm">Sil</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+<br /><br />
+      <a href="/Course/CreateCourse/" class="btn btn-danger btn-block">Yeni Kurs Girişi</a>

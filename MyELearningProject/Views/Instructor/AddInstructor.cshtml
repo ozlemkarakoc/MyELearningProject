@@ -1,0 +1,21 @@
+﻿@model MyELearningProject.DAL.Entities.Instructor
+@{
+    ViewBag.Title = "AddInstructor";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>Yeni Eğitmen Kaydı</h2>
+
+<form method="post">
+    <br />
+    <label>Eğitmen Adı</label>
+    <input type="text" name="Name" class="form-control" />
+    <br /><br />
+    <label>Eğitmen Soyadı</label>
+    <input type="text" name="Surname" class="form-control" />
+    <br /><br />
+    <label>Eğitmen Görseli</label>
+    <input type="text" name="ImageUrl" class="form-control" />
+    <br /><br />
+    <button class="btn btn-primary">Eğitmeni Kaydet</button>
+</form>

@@ -1,0 +1,26 @@
+﻿@model MyELearningProject.DAL.Entities.Address
+@{
+    ViewBag.Title = "AddAddress";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h3>Adres Bilgisi Ekleme Sayfası</h3>
+
+<form method="post">
+    <label>Başlık</label>
+    <input type="text" name="Title" class="form-control" />
+    <br /><br />
+    <label>Açıklama</label>
+    <input type="text" name="Description" class="form-control" />
+    <br /><br />
+    <label>Açık Adres</label>
+    <input type="text" name="AddressInfo" class="form-control" />
+    <br /><br />
+    <label>Telefon</label>
+    <input type="number" name="Phone" class="form-control" />
+    <br /><br />
+    <label>Mail</label>
+    <input type="email" name="Email" class="form-control" />
+    <br /><br />
+    <button class="btn btn-outline-primary">Kaydet</button> 
+</form>

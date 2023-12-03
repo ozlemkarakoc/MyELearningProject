@@ -1,0 +1,35 @@
+﻿@model MyELearningProject.DAL.Entities.About
+@{
+    ViewBag.Title = "AddAbout";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h3>Hakkımızda Ekleme Sayfası</h3>
+
+<form method="post">
+    <label>Başlık</label>
+    <input type="text" name="Title" class="form-control" />
+    <br /><br />
+    <label>Açıklama</label>
+    <textarea class="form-control" name="Description" rows="5"></textarea>
+    <br /><br />
+    <label>Yetenek 1</label>
+    <input type="text" name="Skill1" class="form-control" />
+    <br /><br />
+    <label>Yetenek 2</label>
+    <input type="text" name="Skill2" class="form-control" />
+    <br /><br />
+    <label>Yetenek 3</label>
+    <input type="text" name="Skill3" class="form-control" />
+    <br /><br />
+    <label>Yetenek 4</label>
+    <input type="text" name="Skill4" class="form-control" />
+    <br /><br />
+    <label>Yetenek 5</label>
+    <input type="text" name="Skill5" class="form-control" />
+    <br /><br />
+    <label>Yetenek 6</label>
+    <input type="text" name="Skill6" class="form-control" />
+    <br /><br />
+    <button class="btn btn-outline-primary">Kaydet</button>
+</form>
