@@ -3,6 +3,7 @@ AspNet MVC, Entity Framework Code First, SQL Server
 AspNet Mvc ile oluşturulan Entity Framework yaklaşımı ile oluşturulan bir Code First projesidir. Veri tabanı olarak SQL Server kullanılmıştır. İçeriği bir Online Eğitim Platformu olan projede admin, öğrenci ve UI bölümleri tamamen dinamik oluşturulmuştur. Eğitmenler, Referanslar, Kurslar ve Kategoriler başta olmak üzere CRUD işlemleri mevcuttur. CSS ve BootStrap araçları kullanılarak estetik görünümlü ve kullanışlı bir tasarım elde ettik.
 
 Kullanılan Teknolojiler 
+
 -AspNet MVC
 -SQL Server
 -Entity Framework Code First
@@ -11,6 +12,7 @@ Kullanılan Teknolojiler
 -HTML
 
 Proje İçeriği
+
 -Admin / Öğrenci login işlemleri
 -Eğitmen CRUD işlermleri
 -Kurs CRUD işlemleri
